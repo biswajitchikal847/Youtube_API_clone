@@ -164,7 +164,7 @@
                 <li> <i class="material-icons">play_arrow</i><span>Your Videos</span></li>
                 <li><i class="material-icons">watch_later</i><span>Watch Later</span></li>
                 <li> <i class="material-icons">thumb_up</i><span>Liked Videos</span></li>
-                <li><i class="fas fa-play"></i><span>  Javascript</span></li>
+                <li><i class="fas fa-play-circle"></i><span>  Playlist</span></li>
             </ul>
             <hr>
 
@@ -201,7 +201,7 @@
 
 
 
-    function appendVideos(video_data) {
+    appendVideos = (video_data)=> {
         videos.innerHTML = null;
         video_data.forEach(({ id: { videoId } }) => {
             let div = document.createElement("div");
